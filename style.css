@@ -94,23 +94,29 @@ html {
   width: 16%;
 }
 
-/* section 1 */
+/* general sections */
 .info {
+  max-width: 200rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  text-align: center;
+}
+
+/* section 1 */
+.info--1 {
   background-image: url(img/bg.jpg);
   background-size: cover;
-  max-width: 200rem;
   height: 60rem;
-  text-align: center;
   padding-top: 12rem;
 }
 
 .slide {
   float: left;
-  margin-top: 10rem;
+  margin-top: 20rem;
   width: 5rem;
   height: 25rem;
   background-color: white;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 .soc {
@@ -166,10 +172,8 @@ html {
 }
 
 /* section 2 */
-.info2 {
+.info--2 {
   height: 110rem;
-  max-width: 200rem;
-  text-align: center;
   padding-top: 10rem;
   background-color: rgb(241, 239, 239);
 }
@@ -191,7 +195,7 @@ html {
 
 .line {
   background-color: #3200ff;
-  width: 4rem;
+  width: 4.5rem;
   margin-left: auto;
   height: 0.8rem;
   margin-right: auto;
@@ -292,22 +296,19 @@ span {
 
 /* section 3 */
 
-.info3 {
+.info--3 {
   height: 100rem;
-  text-align: center;
   padding-top: 10rem;
   background-color: rgb(230, 227, 227);
-  max-width: 200rem;
 }
 
 /* section 4 */
 
-.info4 {
+.info--4 {
   height: 120rem;
   padding-top: 10rem;
   background-image: url(img/bg.jpg);
   background-size: cover;
-  max-width: 200rem;
 }
 
 .details {
@@ -389,10 +390,9 @@ input:focus {
 
 /* section 5 */
 
-.info5 {
+.info--5 {
   background-color: black;
   height: 30rem;
-  max-width: 200rem;
   color: white;
 }
 
