@@ -3,52 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open Sans"
     />
+
+    <link rel="stylesheet" href="style.css" />
+
     <link rel="shortcut icon" href="img/dan.png" type="image/x-icon" />
 
     <title>MayDan</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
-    <div class="container">
-      <header class="bar">
-        <div class="bars">
-          <div class="logo">
-            <img class="img" src="img/dan.png" alt="" />
+    <div class="con">
+      <header class="navbar-head">
+        <div class="navbar-content">
+          <div class="navbar-logo">
+            <img class="navbar-img" src="img/dan.png" alt="" />
             <h3>MAYOWA OLUWANIMOTELE</h3>
           </div>
-          <nav class="navbar">
-            <a href="#Home"><strong>Home</strong></a>
-            <a href="#About"><strong>About</strong></a>
-            <a href="img/Resume.png" download="Resume"
+          <nav class="navbar-links">
+            <a class="nav-btn" href="#Home"><strong>Home</strong></a>
+            <a class="nav-btn" href="#About"><strong>About</strong></a>
+            <a class="nav-btn" href="img/Resume.png" download="Resume"
               ><strong>Resume</strong></a
             >
-            <a href="#Contact"><strong>Contact</strong></a>
+            <a class="nav-btn" href="#Contact"><strong>Contact</strong></a>
           </nav>
         </div>
       </header>
-      <div class="slide">
+
+      <div class="section-home-slide">
         <a href="https://github.com/MayDan12"
-          ><img class="soc" src="img/github.png" alt=""
-        /></a>
+          ><ion-icon class="slide-icon" name="logo-github"></ion-icon
+        ></a>
         <a href="https://twitter.com/Mayowadan12"
-          ><img class="soc" src="img/twitter-sign.png" alt=""
-        /></a>
+          ><ion-icon class="slide-icon" name="logo-twitter"></ion-icon
+        ></a>
         <a href="https://instagram.com/mayowa_dan"
-          ><img class="soc" src="img/instagram.png" alt=""
-        /></a>
+          ><ion-icon class="slide-icon" name="logo-instagram"></ion-icon
+        ></a>
         <a href="https://www.linkedin.com/in/mayowa-oluwanimotele-780118255"
-          ><img class="soc" src="img/linkedin.png" alt=""
-        /></a>
+          ><ion-icon class="slide-icon" name="logo-linkedin"></ion-icon
+        ></a>
         <a href="mailto:oluwamayowadan@gmail.com"
-          ><img class="soc" src="img/email.png" alt=""
-        /></a>
+          ><ion-icon class="slide-icon" name="mail-outline"></ion-icon
+        ></a>
       </div>
+
       <!-- Section 1 -->
-      <section id="Home" class="info info--1">
+      <section id="Home" class="container section-home">
         <div class="home-content">
           <div class="content">
             <h1>HEY, I'M MAYOWA OLUWANIMOTELE</h1>
@@ -58,18 +75,16 @@
               Web Applications that contribute to the success of the final
               result, products.
             </p>
-            <button class="btnn">
-              <a href="#Projects"><strong>PROJECTS</strong></a>
-            </button>
+            <a class="btnn" href="#Projects"><strong>PROJECTS</strong></a>
           </div>
         </div>
       </section>
 
       <!-- section 2 -->
 
-      <section id="About" class="info info--2">
+      <section id="About" class="container section-about">
         <div class="about">
-          <div class="subsec">
+          <div class="primary-heading">
             <h3>ABOUT ME</h3>
             <div class="line"></div>
           </div>
@@ -81,46 +96,41 @@
             </p>
           </div>
 
-          <div class="box">
-            <div class="box-0">
-              <div class="knowme">
-                <h3>Learn more about me!</h3>
-                <p class="ben">
-                  I develop the <strong>Front-end of Websites</strong> and
-                  <strong>Web Applications</strong> as a Front-end Web
-                  Developer, which contributes to the overall success of the
-                  finished product. View a selection of my work under
-                  <strong>Projects</strong>.
-                </p>
-                <p class="ben">
-                  In order to benefit other members of the developer community,
-                  I also enjoy contributing content that is linked to the
-                  knowledge I have acquired over the years in web development.
-                  Please feel free to connect with me or follow me on
-                  <a href="https://www.linkedin.com/in/mayowa-daniel-780118255"
-                    ><strong>Linkedin</strong></a
-                  >, where I share relevant
-                  <strong>Web Development </strong> and
-                  <strong>Programming</strong>
-                  stuff.
-                </p>
-                <p class="ben">
-                  I'm interested in employment possibilities where I can grow,
-                  learn, and contribute. Please get in touch with me if you have
-                  a suitable opportunity that matches my qualifications and
-                  expertise.
-                </p>
+          <div class="about-text-box grid grid-2cols">
+            <div class="about-text-description">
+              <h3>Learn more about me!</h3>
+              <p class="about-text">
+                I develop the <strong>Front-end of Websites</strong> and
+                <strong>Web Applications</strong> as a Front-end Web Developer,
+                which contributes to the overall success of the finished
+                product. View a selection of my work under
+                <strong>Projects</strong>.
+              </p>
+              <p class="about-text">
+                In order to benefit other members of the developer community, I
+                also enjoy contributing content that is linked to the knowledge
+                I have acquired over the years in web development. Please feel
+                free to connect with me or follow me on
+                <a href="https://www.linkedin.com/in/mayowa-daniel-780118255"
+                  ><strong>Linkedin</strong></a
+                >, where I share relevant <strong>Web Development </strong> and
+                <strong>Programming</strong>
+                stuff.
+              </p>
+              <p class="about-text">
+                I'm interested in employment possibilities where I can grow,
+                learn, and contribute. Please get in touch with me if you have a
+                suitable opportunity that matches my qualifications and
+                expertise.
+              </p>
 
-                <button class="btn">
-                  <a href="#Contact"><strong>CONTACT</strong></a>
-                </button>
-              </div>
+              <a class="about-btn" href="#Contact"><strong>CONTACT</strong></a>
             </div>
 
-            <div class="box-1">
+            <div class="about-skills">
               <div class="skills">
                 <h3>Skills</h3>
-                <div class="ski-box">
+                <div class="skills-list">
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>
@@ -140,11 +150,9 @@
       </section>
 
       <!-- section 3 -->
-
-      <!-- section 3 -->
-      <section id="Projects" class="info info--3">
+      <section id="Projects" class="container section-projects">
         <div class="project">
-          <div class="subsec">
+          <div class="primary-heading">
             <h3>PROJECTS</h3>
             <div class="line"></div>
           </div>
@@ -157,13 +165,19 @@
             </p>
           </div>
         </div>
+
+        <div class="project-items grid grid-3cols">
+          <div class="project-gallery">weduiweduiwe</div>
+          <div class="project-text">yuwfjkwdukwuo</div>
+          <div class="hddfjhfh">jhsdcuiwduowdfuoerw</div>
+        </div>
       </section>
 
       <!-- section 4 -->
 
-      <section id="Contact" class="info info--4">
-        <div class="contact">
-          <div class="subsec">
+      <section id="Contact" class="container section-contact">
+        <div class="section-contact-content">
+          <div class="primary-heading">
             <h3>CONTACT</h3>
             <div class="line"></div>
           </div>
@@ -175,10 +189,10 @@
             </p>
           </div>
 
-          <div class="details">
-            <div class="contain">
+          <div class="section-contact-form">
+            <div class="section-contact-input">
               <div action="" method="post">
-                <div class="form">
+                <div class="contact-form">
                   <label for="name">Name</label>
                   <p></p>
                   <input
@@ -189,7 +203,7 @@
                   />
                 </div>
 
-                <div class="form">
+                <div class="contact-form">
                   <label for="email">Email</label>
                   <p></p>
                   <input
@@ -201,7 +215,7 @@
                   />
                 </div>
 
-                <div class="form">
+                <div class="contact-form">
                   <label for="message">Message</label>
                   <p></p>
                   <textarea
@@ -213,7 +227,7 @@
                     required
                   ></textarea>
                 </div>
-                <button class="but"><strong>SUBMIT</strong></button>
+                <button class="form-btn"><strong>SUBMIT</strong></button>
               </div>
             </div>
           </div>
@@ -222,47 +236,42 @@
 
       <!-- footer Section -->
 
-      <section class="info info--5">
-        <footer>
-          <div class="mayowa">
-            <div class="fname">
-              <h3>MAYOWA OLUWANIMOTELE</h3>
-              <p>
-                A Web Developer with a Front-end concentration, Create the
-                Front-end of Websites and Web Applications, which promotes the
-                success of the final result, products.
-              </p>
-            </div>
+      <section class="container section-footer">
+        <div class="section-footer-content">
+          <div class="section-footer-icon">
+            <div class="footer-img">
+              <h3 class="footer-heading">Social</h3>
 
-            <div class="media">
-              <div class="footer-icon">
-                <p>
-                  <!-- A Web Developer with a Front-end concentration, Create the
-                  Front-end of Websites and Web Applications, which promotes the
-                  success of the final result, products. -->
-                </p>
-              </div>
-              <!-- <a href="https://github.com/MayDan12"
-                      ><img class="med" src="img/github.png" alt=""
-                    /></a>
-                    <a href="https://twitter.com/Mayowadan12"
-                      ><img class="med" src="img/twitter-sign.png" alt=""
-                    /></a>
-                    <a href="https://instagram.com/mayowa_dan"
-                      ><img class="med" src="img/instagram.png" alt=""
-                    /></a>
-                    <a href="https://www.linkedin.com/in/mayowa-daniel-780118255"
-                      ><img class="med" src="img/linkedin.png" alt=""
-                    /></a>
-                    <a href="mailto:oluwamayowadan@gmail.com"
-                      ><img class="med" src="img/email.png" alt=""
-                    /></a> -->
+              <a href="https://github.com/MayDan12"
+                ><ion-icon class="footer-icon" name="logo-github"></ion-icon
+              ></a>
+              <a href="https://twitter.com/Mayowadan12"
+                ><ion-icon class="footer-icon" name="logo-twitter"></ion-icon
+              ></a>
+              <a href="https://instagram.com/mayowa_dan"
+                ><ion-icon class="footer-icon" name="logo-instagram"></ion-icon
+              ></a>
+              <a href="https://www.linkedin.com/in/mayowa-daniel-780118255"
+                ><ion-icon class="footer-icon" name="logo-linkedin"></ion-icon
+              ></a>
+              <a href="mailto:oluwamayowadan@gmail.com"
+                ><ion-icon class="footer-icon" name="mail-outline"></ion-icon
+              ></a>
             </div>
           </div>
-          <div class="line-w">
-            <div class="line1"></div>
+
+          <div class="section-footer-text">
+            <h3 class="footer-heading">MAYOWA OLUWANIMOTELE</h3>
+            <p>
+              A Web Developer with a Front-end concentration, Create the
+              Front-end of Websites and Web Applications, which promotes the
+              success of the final result, products.
+            </p>
           </div>
-        </footer>
+        </div>
+        <div class="line-w">
+          <div class="line1"></div>
+        </div>
       </section>
     </div>
     <script src="port.js"></script>
