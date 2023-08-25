@@ -44,7 +44,7 @@ html {
 }
 
 .line {
-  background-color: #3200ff;
+  background-color: #1352ff;
   width: 4.5rem;
   margin-left: auto;
   height: 0.8rem;
@@ -91,7 +91,7 @@ html {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.6rem;
-  color: rgb(80, 80, 80);
+  color: #222;
   transition: all 0.4s;
 }
 
@@ -101,7 +101,7 @@ html {
 
 .nav-btn:hover,
 .nav-btn:active {
-  color: #2505a5;
+  color: #1352ff;
   transition: all 0.5s;
 }
 
@@ -179,7 +179,7 @@ html {
 .btnn:link,
 .btnn:visited {
   padding: 1rem 2rem;
-  background-color: #3200ff;
+  background-color: #1352ff;
   border: 0;
   border-radius: 1rem;
   transition: all 0.4s;
@@ -199,8 +199,8 @@ html {
 /**********************/
 
 .section-about {
-  height: 90rem;
-  padding-top: 10rem;
+  height: 80rem;
+  padding: 7rem 0;
   background-color: #eee;
 }
 
@@ -244,7 +244,7 @@ html {
 
 .about-btn:link,
 .about-btn:visited {
-  background-color: #3200ff;
+  background-color: #1352ff;
   color: white;
   padding: 1rem 2.5rem;
   font-size: 1.9rem;
@@ -278,104 +278,122 @@ html {
   color: #333;
 }
 
-/* section 3 */
+/************************/
+/* Projects section  */
+/**********************/
 
 .section-projects {
-  height: 100rem;
-  padding-top: 10rem;
+  height: 50rem;
+  padding: 7rem 0;
   background-color: rgb(230, 227, 227);
 }
 
-/* section 4 */
+/********************/
+/* contact section */
+/********************/
 
-.section-contact {
-  height: 120rem;
-  padding-top: 10rem;
-  background-image: url(img/bg.jpg);
+.section-cta {
+  padding: 7rem 0;
+
+  /* padding-top: 10rem; */
+  /* background-image: url(img/bg.jpg);
+  background-size: cover; */
+}
+
+.section-cta-container {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.1rem;
+  background-image: linear-gradient(to right bottom, #1352ff, #2505a5);
+  overflow: hidden;
+  height: 50rem;
+}
+
+.cta-text-box {
+  color: #fff;
+  padding: 4.5rem 5rem 5rem 5rem;
+}
+.cta .heading-secondary {
+  font-size: 2.7rem;
+  color: inherit;
+  margin-bottom: 2.9rem;
+}
+
+.cta-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.3),
+      rgba(230, 125, 34, 0.3)
+    ),
+    url("img/daniel.jpg");
   background-size: cover;
+  background-position: center;
 }
 
-.section-contact-form {
-  max-width: 81rem;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5rem;
-  height: 70rem;
-  border-radius: 1rem;
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 2rem;
 }
 
-.section-contact-input {
-  padding-top: 5rem;
-  margin: 3rem;
+.cta-form label {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
-.contact-form {
-  margin-top: 3rem;
-}
-
-label {
-  color: rgb(80, 80, 80);
-  padding-left: 1.5rem;
-  font-size: 1.7rem;
-  font-weight: bold;
-}
-
-input {
-  border-radius: 0.7rem;
-  height: 6.5rem;
+.cta-form input {
   width: 100%;
-  padding-left: 3rem;
-  margin: 1rem;
-  background-color: rgb(228, 228, 228);
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: inherit;
   border: none;
-  font-size: 1.5rem;
-  color: black;
-}
-
-input:focus {
   outline: none;
+  background-color: #e9e6f6;
+  border-radius: 0.8rem;
 }
 
 .message {
-  border-radius: 0.7rem;
   width: 100%;
-  padding-top: 1rem;
-  padding-left: 3rem;
-  margin: 1rem;
-  background-color: rgb(228, 228, 228);
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: 400;
   border: none;
-  font-size: 1.5rem;
-  color: black;
-  height: 12rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  height: 8rem;
   outline: none;
-  line-height: 1.5rem;
+  line-height: 1.1;
   resize: none;
+  background-color: #e9e6f6;
 }
 
-.form-btn {
-  font-size: 1.5rem;
-  float: right;
-  color: white;
-  background-color: #3200ff;
-  width: 17rem;
-  height: 5rem;
-  border: none;
-  border-radius: 0.5rem;
-  margin-top: 1.5rem;
+.cta-form button {
+  color: #222;
 }
 
-.form-btn:hover {
-  width: 17.5rem;
-  height: 5.5rem;
-  transition: ease-in-out 0.5s;
-  cursor: pointer;
-}
-
-/* section 5 */
+/**********************/
+/* Footer section */
+/********************/
 
 .section-footer {
-  background-color: black;
+  background-image: linear-gradient(to right bottom, #1352ff, #2505a5);
   height: 30rem;
   color: white;
 }

@@ -175,49 +175,45 @@
 
       <!-- section 4 -->
 
-      <section id="Contact" class="container section-contact">
+      <section class="section-cta">
         <div class="section-contact-content">
           <div class="primary-heading">
             <h3>CONTACT</h3>
             <div class="line"></div>
           </div>
+        <div class="section-cta-container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get in touch with me!</h2>
+              <p class="cta-text">
+                Please fill out the Contact form below to get in touch with me,
+                and I will do my best to respond to you as soon as I can!
+              </p>
 
-          <div class="text">
-            <p>
-              Please fill out the Contact form below to get in touch with me,
-              and I will do my best to respond to you as soon as I can.
-            </p>
-          </div>
-
-          <div class="section-contact-form">
-            <div class="section-contact-input">
-              <div action="" method="post">
-                <div class="contact-form">
-                  <label for="name">Name</label>
-                  <p></p>
+              <form action="#" class="cta-form">
+                <div>
+                  <label for="full-name">Full Name</label>
                   <input
-                    id="name"
+                    id="full-name"
                     type="text"
-                    placeholder="Enter Your Name"
+                    placeholder="John Smith"
                     required
                   />
                 </div>
 
-                <div class="contact-form">
-                  <label for="email">Email</label>
-                  <p></p>
+                <div>
+                  <label for="email">Email Address</label>
                   <input
-                    type="email"
-                    name=""
                     id="email"
-                    placeholder="Enter Your Email"
+                    type="email"
+                    placeholder="me@example.com"
                     required
+                    name=""
                   />
                 </div>
 
-                <div class="contact-form">
+                <div>
                   <label for="message">Message</label>
-                  <p></p>
                   <textarea
                     class="message"
                     type="text"
@@ -227,9 +223,15 @@
                     required
                   ></textarea>
                 </div>
-                <button class="form-btn"><strong>SUBMIT</strong></button>
-              </div>
+
+                <button class="btn">Submit</button>
+              </form>
             </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Mayowa Oluwanimotele"
+            ></div>
           </div>
         </div>
       </section>
