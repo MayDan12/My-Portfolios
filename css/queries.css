@@ -1,0 +1,5 @@
+@media (max-width: 75em) {
+  .container {
+    max-width: 180rem;
+  }
+}

@@ -13,7 +13,6 @@ html {
 /*********************/
 /* general sections */
 /*********************/
-
 .container {
   max-width: 200rem;
   padding-left: 3.2rem;
@@ -27,7 +26,6 @@ html {
 
 .grid-3cols {
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.75;
 }
 
 .grid-2cols {
@@ -39,7 +37,7 @@ html {
 }
 
 .primary-heading h3 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: rgb(46, 46, 46);
   text-align: center;
 }
@@ -60,7 +58,7 @@ html {
 }
 .text p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 3rem;
   text-align: center;
   color: rgb(80, 80, 80);
@@ -83,21 +81,22 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .nav-btn:link,
 .nav-btn:visited {
   text-decoration: none;
   margin: 2rem;
-  font-weight: 600;
+  font-weight: 300;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #222;
   transition: all 0.4s;
 }
 
 .navbar-links a:last-child {
-  margin-right: 3rem;
+  margin-right: 7rem;
 }
 
 .nav-btn:hover,
@@ -128,25 +127,33 @@ html {
 /*******************/
 
 .section-home {
-  background-image: url(img/bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-size: cover;
-  height: 65rem;
+  height: 75rem;
   padding-top: 16rem;
 }
 
 .section-home-slide {
-  float: left;
-  margin-top: 22rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 0.5rem;
+  width: 7rem;
+  height: 28rem;
+  /* margin-top: 22rem;
   width: 5rem;
   height: 26rem;
   background-color: #fff;
   padding: 1rem 0;
-  box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.26);
+  
+  overflow: hidden; */
 }
 
 .slide-icon {
-  height: 3.4rem;
-  width: 3.4rem;
+  height: 3.7rem;
+  width: 3.7rem;
   margin: 0.7rem;
   color: #222;
 }
@@ -156,30 +163,38 @@ html {
 }
 
 .home-content {
-  max-width: 130rem;
+  /* max-width: 130rem; */
+  position: relative;
+  margin-top: 25rem;
+  text-align: center;
 }
 .content {
-  margin: 0 auto;
-  padding-top: 9rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90rem;
+  width: 92%;
 }
 
 .content h1 {
-  font-size: 4.5rem;
+  font-size: 5.2rem;
   color: rgb(46, 46, 46);
+  font-weight: 700;
 }
 
 .content p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-top: 3rem;
-  line-height: 3rem;
+  line-height: 2;
   color: rgb(80, 80, 80);
   margin-bottom: 3rem;
 }
 
 .btnn:link,
 .btnn:visited {
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
   background-color: #1352ff;
   border: 0;
   border-radius: 1rem;
@@ -200,7 +215,7 @@ html {
 /**********************/
 
 .section-about {
-  height: 80rem;
+  height: 90rem;
   padding: 7rem 0;
   background-color: #eee;
 }
@@ -238,7 +253,7 @@ html {
 .about-text {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   line-height: 3rem;
   color: rgb(80, 80, 80);
 }
@@ -247,7 +262,7 @@ html {
 .about-btn:visited {
   background-color: #1352ff;
   color: white;
-  padding: 1rem 2.5rem;
+  padding: 2rem 3rem;
   font-size: 1.9rem;
   border-radius: 1rem;
   transition: all 0.5s;
@@ -284,9 +299,67 @@ html {
 /**********************/
 
 .section-projects {
-  height: 50rem;
+  height: 90rem;
   padding: 7rem 0;
   background-color: rgb(230, 227, 227);
+}
+
+.project-items {
+  padding: 7rem 2.5rem 0 2.5rem;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.project-gallery {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.26);
+  background-image: linear-gradient(to right top, #1352ff, #2505a5);
+  transition: all 0.4s;
+}
+
+.project-gallery:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-description {
+  width: 80%;
+  margin: 0 auto;
+  margin: 3rem 4.7rem 3rem;
+}
+.project-text {
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: inherit;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #1352ff;
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #2505a5;
+  border-bottom: 0.1rem solid transparent;
+}
+
+.all-project {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 /********************/
@@ -339,7 +412,7 @@ html {
       rgba(235, 151, 78, 0.3),
       rgba(230, 125, 34, 0.3)
     ),
-    url("img/daniel.jpg");
+    url("../img/daniel.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -365,7 +438,7 @@ html {
   font-weight: 400;
   font-family: inherit;
   border: none;
-  outline: none;
+  /* outline: none; */
   background-color: #e9e6f6;
   border-radius: 0.8rem;
 }
@@ -373,28 +446,36 @@ html {
 .message {
   width: 100%;
   padding: 1rem;
+  align-self: end;
   font-family: inherit;
   font-weight: 400;
   border: none;
   border-radius: 0.8rem;
   font-size: 1.6rem;
   height: 8rem;
-  outline: none;
+  /* outline: none; */
   line-height: 1.1;
   resize: none;
   background-color: #e9e6f6;
 }
 
 .cta-form button {
-  align-self: center;
-  color: #222;
+  align-self: end;
+  color: #fff;
+  background-color: #747474;
   font-family: inherit;
   font-weight: 700;
   font-size: 1.8rem;
-  padding: 0;
-  width: 50%;
-  height: 40%;
-  margin: 0 auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.9rem;
+  margin-bottom: 0.4rem;
+  transition: all 0.4s;
+}
+
+.cta-form button:hover {
+  color: #1352ff;
+  background-color: #fff;
 }
 
 /**********************/
@@ -449,6 +530,10 @@ html {
   height: 3rem;
   color: #fff;
   margin: 0.7rem;
+}
+
+.footer-icon:first-child {
+  margin-left: 0;
 }
 
 .line-w {

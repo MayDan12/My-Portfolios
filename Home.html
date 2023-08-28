@@ -12,7 +12,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css">
 
     <link rel="shortcut icon" href="img/dan.png" type="image/x-icon" />
 
@@ -28,7 +29,7 @@
     ></script>
   </head>
   <body>
-    <div class="con">
+    <main class="con">
       <header class="navbar-head">
         <div class="navbar-content">
           <div class="navbar-logo">
@@ -38,44 +39,43 @@
           <nav class="navbar-links">
             <a class="nav-btn" href="#Home"><strong>Home</strong></a>
             <a class="nav-btn" href="#About"><strong>About</strong></a>
-            <a class="nav-btn" href="img/Resume.png" download="Resume"
-              ><strong>Resume</strong></a
-            >
+            <a class="nav-btn" href="img/Resume.png" download="Resume"><strong>Resume</strong></a>
             <a class="nav-btn" href="#Contact"><strong>Contact</strong></a>
           </nav>
         </div>
       </header>
 
-      <div class="section-home-slide">
-        <a href="https://github.com/MayDan12"
-          ><ion-icon class="slide-icon" name="logo-github"></ion-icon
-        ></a>
-        <a href="https://twitter.com/Mayowadan12"
-          ><ion-icon class="slide-icon" name="logo-twitter"></ion-icon
-        ></a>
-        <a href="https://instagram.com/mayowa_dan"
-          ><ion-icon class="slide-icon" name="logo-instagram"></ion-icon
-        ></a>
-        <a href="https://www.linkedin.com/in/mayowa-oluwanimotele-780118255"
-          ><ion-icon class="slide-icon" name="logo-linkedin"></ion-icon
-        ></a>
-        <a href="mailto:oluwamayowadan@gmail.com"
-          ><ion-icon class="slide-icon" name="mail-outline"></ion-icon
-        ></a>
-      </div>
+      
 
       <!-- Section 1 -->
-      <section id="Home" class="container section-home">
+      <section id="Home" class="section-home">
         <div class="home-content">
           <div class="content">
             <h1>HEY, I'M MAYOWA OLUWANIMOTELE</h1>
             <p>
               A Front-end Web Developer mainly focuses on creating the user
-              interface for websites and <br />
-              Web Applications that contribute to the success of the final
+              interface for websites and Web Applications that contribute to the success of the final
               result, products.
             </p>
             <a class="btnn" href="#Projects"><strong>PROJECTS</strong></a>
+          </div>
+
+          <div class="section-home-slide">
+            <a href="https://github.com/MayDan12"
+              ><ion-icon class="slide-icon" name="logo-github"></ion-icon
+            ></a>
+            <a href="https://twitter.com/Mayowadan12"
+              ><ion-icon class="slide-icon" name="logo-twitter"></ion-icon
+            ></a>
+            <a href="https://instagram.com/mayowa_dan"
+              ><ion-icon class="slide-icon" name="logo-instagram"></ion-icon
+            ></a>
+            <a href="https://www.linkedin.com/in/mayowa-oluwanimotele-780118255"
+              ><ion-icon class="slide-icon" name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="mailto:oluwamayowadan@gmail.com"
+              ><ion-icon class="slide-icon" name="mail-outline"></ion-icon
+            ></a>
           </div>
         </div>
       </section>
@@ -137,10 +137,10 @@
                   <span>React</span>
                   <span>Git</span>
                   <span>Github</span>
-                  <br />
+                  
                   <span>Shell</span>
                   <span>Graphics Design</span>
-                  <span>Responsive Design</span><br />
+                  <span>Responsive Design</span>
                   <span>C Program</span>
                 </div>
               </div>
@@ -164,12 +164,45 @@
               each of which includes a case study.
             </p>
           </div>
-        </div>
+          
+          <div class="project-items grid grid-3cols">
+            <div class="project-gallery">
+              <img src="img/project 1.png" alt="MayDan Websites" srcset="" class="project-img">
+              
+              <div class="project-description">
+                <p class="project-text">
+                  This is a website i create for the purpose of share creative web designs with others
+                </p>
+              </div>
+            </div>
 
-        <div class="project-items grid grid-3cols">
-          <div class="project-gallery">weduiweduiwe</div>
-          <div class="project-text">yuwfjkwdukwuo</div>
-          <div class="hddfjhfh">jhsdcuiwduowdfuoerw</div>
+            <div class="project-gallery">
+              <img src="img/project 2.png" alt="Pivot Digital" srcset="" class="project-img">
+              
+              <div class="project-description">
+                <p class="project-text">
+                  Pivot is a digital agency website that create customized sustainable digital solution to help you succeed online.
+                </p>
+              </div>
+                
+              </p>
+            </div>
+
+            <div class="project-gallery">
+              <img src="img/project 3.png" alt="Omnifood" srcset="" class="project-img">
+              
+              <div class="project-description">
+                <p class="project-text">
+                  Omnifood is a food technology website with a major focus on consumer well-being through a healthy diet by using AI algorithm to create a custom and individual weekly meal plan.
+                </p>
+              </div>
+                
+              </p>
+            </div>
+          </div>
+          <div class="container all-project">
+            <a class="link" href="http://">See all projects &rarr;</a>
+          </div>
         </div>
       </section>
 
@@ -275,7 +308,7 @@
           <div class="line1"></div>
         </div>
       </section>
-    </div>
+    </main>
     <script src="port.js"></script>
   </body>
 </html>
