@@ -8,6 +8,15 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.body {
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 /*********************/
@@ -33,11 +42,11 @@ html {
 }
 
 .primary-heading {
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
-.primary-heading h3 {
-  font-size: 3.5rem;
+.primary-heading {
+  font-size: 3.2rem;
   color: rgb(46, 46, 46);
   text-align: center;
 }
@@ -53,13 +62,12 @@ html {
 }
 
 .text {
-  width: 100%;
+  max-width: 90rem;
   margin: 0 auto;
-}
-.text p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0 3rem 0 3rem;
   font-size: 2rem;
-  line-height: 3rem;
+
+  line-height: 1.5;
   text-align: center;
   color: rgb(80, 80, 80);
 }
@@ -69,34 +77,41 @@ html {
 /*********************/
 
 .navbar-head {
-  max-width: 130rem;
-}
+  /*
+  
 
-.navbar-content {
-  background-color: white;
-  height: 9rem;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  padding: 2rem 5rem;
+  background-color: white; */
+  display: flex;
   z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 8rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 4.8rem;
+  align-items: center;
 }
 
 .nav-btn:link,
 .nav-btn:visited {
   text-decoration: none;
-  margin: 2rem;
+
   font-weight: 300;
   text-transform: uppercase;
   font-size: 1.8rem;
   color: #222;
   transition: all 0.4s;
-}
-
-.navbar-links a:last-child {
-  margin-right: 7rem;
 }
 
 .nav-btn:hover,
@@ -106,20 +121,40 @@ html {
 }
 
 .navbar-logo {
-  margin-left: 4rem;
-  max-width: 32rem;
+  display: flex;
   align-items: center;
 }
 
-.navbar-logo h3 {
-  float: right;
+.logo-name {
   color: rgb(80, 80, 80);
   font-size: 1.9rem;
-  padding-top: 1.5rem;
+  font-weight: 700;
 }
 
 .navbar-img {
-  width: 16%;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  margin-right: 1.8rem;
+}
+
+/****************/
+/* Mobile nav */
+/****************/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /*********************/
@@ -127,28 +162,18 @@ html {
 /*******************/
 
 .section-home {
+  padding-top: 16rem;
   background-image: url(../img/bg.jpg);
   background-size: cover;
-  height: 75rem;
-  padding-top: 16rem;
 }
 
 .section-home-slide {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-  padding: 0.5rem;
-  width: 7rem;
-  height: 28rem;
-  /* margin-top: 22rem;
-  width: 5rem;
-  height: 26rem;
-  background-color: #fff;
-  padding: 1rem 0;
-  
-  overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  padding-bottom: 7rem;
+  gap: 2rem;
 }
 
 .slide-icon {
@@ -159,37 +184,33 @@ html {
 }
 
 .slide-icon:hover {
-  width: 3.1rem;
+  width: 3.4rem;
 }
 
-.home-content {
-  /* max-width: 130rem; */
-  position: relative;
-  margin-top: 25rem;
-  text-align: center;
-}
+/* .home-content {
+} */
+
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 90rem;
-  width: 92%;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 3rem 0 3rem;
 }
 
-.content h1 {
+.main-heading {
   font-size: 5.2rem;
   color: rgb(46, 46, 46);
   font-weight: 700;
 }
 
-.content p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.home-description {
   font-size: 2.3rem;
   padding-top: 3rem;
-  line-height: 2;
+  line-height: 1.5;
   color: rgb(80, 80, 80);
-  margin-bottom: 3rem;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  max-width: 80rem;
 }
 
 .btnn:link,
@@ -215,8 +236,7 @@ html {
 /**********************/
 
 .section-about {
-  height: 90rem;
-  padding: 7rem 0;
+  padding: 5rem 0;
   background-color: #eee;
 }
 
@@ -226,14 +246,14 @@ html {
 }
 
 .about-text-box {
-  max-width: 120rem;
+  max-width: 150rem;
   margin: 0 auto;
 }
 
-.about-text-box h3 {
+.about-heading {
   margin-bottom: 3rem;
-  color: black;
-  font-size: 2rem;
+  color: #333;
+  font-size: 2.5rem;
 }
 
 .about-text-description {
@@ -247,15 +267,19 @@ html {
   margin-top: 5rem;
   width: 100%;
   text-align: justify;
-  padding-left: 2rem;
+  padding-left: 7rem;
 }
 
 .about-text {
   margin-top: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-size: 1.9rem;
   line-height: 3rem;
   color: rgb(80, 80, 80);
+}
+
+.mag {
+  margin-bottom: 5rem;
 }
 
 .about-btn:link,
@@ -299,9 +323,15 @@ html {
 /**********************/
 
 .section-projects {
-  height: 90rem;
   padding: 7rem 0;
   background-color: rgb(230, 227, 227);
+}
+
+.project-container {
+  max-width: 200rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: 0 auto;
 }
 
 .project-items {
@@ -328,15 +358,16 @@ html {
 }
 
 .project-description {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  margin: 3rem 4.7rem 3rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 .project-text {
   font-size: 1.7rem;
   font-weight: 600;
   font-family: inherit;
-  line-height: 1.4;
+  line-height: 1.3;
   color: #fff;
 }
 
@@ -387,7 +418,7 @@ html {
   border-radius: 1.1rem;
   background-image: linear-gradient(to right bottom, #1352ff, #2505a5);
   overflow: hidden;
-  height: 50rem;
+  /* height: 50rem; */
 }
 
 .cta-text-box {
@@ -433,7 +464,7 @@ html {
 
 .cta-form input {
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: inherit;
@@ -453,7 +484,6 @@ html {
   border-radius: 0.8rem;
   font-size: 1.6rem;
   height: 8rem;
-  /* outline: none; */
   line-height: 1.1;
   resize: none;
   background-color: #e9e6f6;
@@ -484,14 +514,14 @@ html {
 
 .section-footer {
   background-image: linear-gradient(to right bottom, #1352ff, #2505a5);
-  height: 30rem;
   color: white;
+  padding: 0 3.2rem;
 }
 
 .section-footer-content {
   display: flex;
   justify-content: space-between;
-  max-width: 120rem;
+  max-width: 140rem;
   margin: 0 auto;
 }
 
@@ -539,6 +569,7 @@ html {
 .line-w {
   max-width: 120rem;
   margin: 0 auto;
+  padding-bottom: 10rem;
 }
 .line1 {
   width: 100%;

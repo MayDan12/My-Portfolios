@@ -13,7 +13,7 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/queries.css" />
 
     <link rel="shortcut icon" href="img/dan.png" type="image/x-icon" />
 
@@ -28,62 +28,80 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
+
   <body>
-    <main class="con">
-      <header class="navbar-head">
-        <div class="navbar-content">
-          <div class="navbar-logo">
-            <img class="navbar-img" src="img/dan.png" alt="" />
-            <h3>MAYOWA OLUWANIMOTELE</h3>
-          </div>
-          <nav class="navbar-links">
+    <header class="navbar-head nav-openyt">
+      <div class="navbar-logo">
+        <div><img class="navbar-img" src="img/dan.png" alt="" /></div>
+        <span class="logo-name">MAYOWA OLUWANIMOTELE </span>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
             <a class="nav-btn" href="#Home"><strong>Home</strong></a>
+          </li>
+          <li>
             <a class="nav-btn" href="#About"><strong>About</strong></a>
-            <a class="nav-btn" href="img/Resume.png" download="Resume"><strong>Resume</strong></a>
+          </li>
+          <li>
+            <a class="nav-btn" href="img/Resume.png" download="Resume"
+              ><strong>Resume</strong></a
+            >
+          </li>
+          <li>
             <a class="nav-btn" href="#Contact"><strong>Contact</strong></a>
-          </nav>
-        </div>
-      </header>
+          </li>
+        </ul>
+      </nav>
 
-      
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
 
+    <main class="con">
       <!-- Section 1 -->
       <section id="Home" class="section-home">
-        <div class="home-content">
-          <div class="content">
-            <h1>HEY, I'M MAYOWA OLUWANIMOTELE</h1>
-            <p>
-              A Front-end Web Developer mainly focuses on creating the user
-              interface for websites and Web Applications that contribute to the success of the final
-              result, products.
-            </p>
-            <a class="btnn" href="#Projects"><strong>PROJECTS</strong></a>
-          </div>
+        <div class="home">
+          <div class="home-content">
+            <div class="content">
+              <h1 class="main-heading">HEY, I'M MAYOWA OLUWANIMOTELE</h1>
+              <div class="home-description">
+                A Front-end Web Developer mainly focuses on creating the user
+                interface for websites and Web Applications that contribute to
+                the success of the final result, products.
+              </div>
+              <a class="btnn" href="#Projects"><strong>PROJECTS</strong></a>
+            </div>
 
-          <div class="section-home-slide">
-            <a href="https://github.com/MayDan12"
-              ><ion-icon class="slide-icon" name="logo-github"></ion-icon
-            ></a>
-            <a href="https://twitter.com/Mayowadan12"
-              ><ion-icon class="slide-icon" name="logo-twitter"></ion-icon
-            ></a>
-            <a href="https://instagram.com/mayowa_dan"
-              ><ion-icon class="slide-icon" name="logo-instagram"></ion-icon
-            ></a>
-            <a href="https://www.linkedin.com/in/mayowa-oluwanimotele-780118255"
-              ><ion-icon class="slide-icon" name="logo-linkedin"></ion-icon
-            ></a>
-            <a href="mailto:oluwamayowadan@gmail.com"
-              ><ion-icon class="slide-icon" name="mail-outline"></ion-icon
-            ></a>
+            <div class="section-home-slide">
+              <a href="https://github.com/MayDan12"
+                ><ion-icon class="slide-icon" name="logo-github"></ion-icon
+              ></a>
+              <a href="https://twitter.com/Mayowadan12"
+                ><ion-icon class="slide-icon" name="logo-twitter"></ion-icon
+              ></a>
+              <a href="https://instagram.com/mayowa_dan"
+                ><ion-icon class="slide-icon" name="logo-instagram"></ion-icon
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mayowa-oluwanimotele-780118255"
+                ><ion-icon class="slide-icon" name="logo-linkedin"></ion-icon
+              ></a>
+              <a href="mailto:oluwamayowadan@gmail.com"
+                ><ion-icon class="slide-icon" name="mail-outline"></ion-icon
+              ></a>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- section 2 -->
 
-      <section id="About" class="container section-about">
-        <div class="about">
+      <section id="About" class="section-about">
+        <div class="about container">
           <div class="primary-heading">
             <h3>ABOUT ME</h3>
             <div class="line"></div>
@@ -91,14 +109,14 @@
           <div class="text">
             <p>
               You can learn more about me, what I do, and my current
-              qualifications here, <br />
-              which are primarily in the areas of technology and programming.
+              qualifications here, which are primarily in the areas of
+              technology and programming.
             </p>
           </div>
 
           <div class="about-text-box grid grid-2cols">
             <div class="about-text-description">
-              <h3>Learn more about me!</h3>
+              <h3 class="about-heading">Learn more about me!</h3>
               <p class="about-text">
                 I develop the <strong>Front-end of Websites</strong> and
                 <strong>Web Applications</strong> as a Front-end Web Developer,
@@ -117,7 +135,7 @@
                 <strong>Programming</strong>
                 stuff.
               </p>
-              <p class="about-text">
+              <p class="about-text mag">
                 I'm interested in employment possibilities where I can grow,
                 learn, and contribute. Please get in touch with me if you have a
                 suitable opportunity that matches my qualifications and
@@ -129,7 +147,7 @@
 
             <div class="about-skills">
               <div class="skills">
-                <h3>Skills</h3>
+                <h3 class="about-heading">Skills</h3>
                 <div class="skills-list">
                   <span>HTML</span>
                   <span>CSS</span>
@@ -137,7 +155,7 @@
                   <span>React</span>
                   <span>Git</span>
                   <span>Github</span>
-                  
+
                   <span>Shell</span>
                   <span>Graphics Design</span>
                   <span>Responsive Design</span>
@@ -150,8 +168,8 @@
       </section>
 
       <!-- section 3 -->
-      <section id="Projects" class="container section-projects">
-        <div class="project">
+      <section id="Projects" class="section-projects">
+        <div class="project-container">
           <div class="primary-heading">
             <h3>PROJECTS</h3>
             <div class="line"></div>
@@ -160,44 +178,58 @@
           <div class="text">
             <p>
               Here are some of the Projects I've worked on for myself and
-              Clients, <br />
-              each of which includes a case study.
+              Clients, each of which includes a case study.
             </p>
           </div>
-          
+
           <div class="project-items grid grid-3cols">
             <div class="project-gallery">
-              <img src="img/project 1.png" alt="MayDan Websites" srcset="" class="project-img">
-              
+              <img
+                src="img/project 1.png"
+                alt="MayDan Websites"
+                srcset=""
+                class="project-img"
+              />
+
               <div class="project-description">
                 <p class="project-text">
-                  This is a website i create for the purpose of share creative web designs with others
+                  This is a website i create for the purpose of share creative
+                  web designs with others
                 </p>
               </div>
             </div>
 
             <div class="project-gallery">
-              <img src="img/project 2.png" alt="Pivot Digital" srcset="" class="project-img">
-              
+              <img
+                src="img/project 2.png"
+                alt="Pivot Digital"
+                srcset=""
+                class="project-img"
+              />
+
               <div class="project-description">
                 <p class="project-text">
-                  Pivot is a digital agency website that create customized sustainable digital solution to help you succeed online.
+                  Pivot is a digital agency website that create customized
+                  sustainable digital solution to help you succeed online.
                 </p>
               </div>
-                
-              </p>
             </div>
 
             <div class="project-gallery">
-              <img src="img/project 3.png" alt="Omnifood" srcset="" class="project-img">
-              
+              <img
+                src="img/project 3.png"
+                alt="Omnifood"
+                srcset=""
+                class="project-img"
+              />
+
               <div class="project-description">
                 <p class="project-text">
-                  Omnifood is a food technology website with a major focus on consumer well-being through a healthy diet by using AI algorithm to create a custom and individual weekly meal plan.
+                  Omnifood is a food technology website with a major focus on
+                  consumer well-being through a healthy diet by using AI
+                  algorithm to create a custom and individual weekly meal plan.
                 </p>
               </div>
-                
-              </p>
             </div>
           </div>
           <div class="container all-project">
@@ -214,65 +246,73 @@
             <h3>CONTACT</h3>
             <div class="line"></div>
           </div>
-        <div class="section-cta-container">
-          <div class="cta">
-            <div class="cta-text-box">
-              <h2 class="heading-secondary">Get in touch with me!</h2>
-              <p class="cta-text">
-                Please fill out the Contact form below to get in touch with me,
-                and I will do my best to respond to you as soon as I can!
-              </p>
+          <div class="section-cta-container">
+            <div class="cta">
+              <div class="cta-text-box">
+                <h2 class="heading-secondary">Get in touch with me!</h2>
+                <p class="cta-text">
+                  Please fill out the Contact form below to get in touch with
+                  me, and I will do my best to respond to you as soon as I can!
+                </p>
 
-              <form action="#" class="cta-form">
-                <div>
-                  <label for="full-name">Full Name</label>
-                  <input
-                    id="full-name"
-                    type="text"
-                    placeholder="John Smith"
-                    required
-                  />
-                </div>
+                <form action="#" class="cta-form">
+                  <div>
+                    <label for="full-name">Full Name</label>
+                    <input
+                      id="full-name"
+                      type="text"
+                      placeholder="John Smith"
+                      required
+                    />
+                  </div>
 
-                <div>
-                  <label for="email">Email Address</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="me@example.com"
-                    required
-                    name=""
-                  />
-                </div>
+                  <div>
+                    <label for="emailss">Email Address</label>
+                    <input
+                      id="emailss"
+                      type="email"
+                      placeholder="me@example.com"
+                      required
+                    />
+                  </div>
 
-                <div>
-                  <label for="message">Message</label>
-                  <textarea
-                    class="message"
-                    type="text"
-                    placeholder="Enter Message"
-                    name=""
-                    id="message"
-                    required
-                  ></textarea>
-                </div>
+                  <div>
+                    <label for="message">Message</label>
+                    <textarea
+                      class="message"
+                      type="text"
+                      placeholder="Enter Message"
+                      name=""
+                      id="message"
+                      required
+                    ></textarea>
+                  </div>
 
-                <button class="btn">Submit</button>
-              </form>
+                  <button class="btn">Submit</button>
+                </form>
+              </div>
+              <div
+                class="cta-img-box"
+                role="img"
+                aria-label="Mayowa Oluwanimotele"
+              ></div>
             </div>
-            <div
-              class="cta-img-box"
-              role="img"
-              aria-label="Mayowa Oluwanimotele"
-            ></div>
           </div>
         </div>
       </section>
 
       <!-- footer Section -->
-
-      <section class="container section-footer">
+      <footer class="section-footer">
         <div class="section-footer-content">
+          <div class="section-footer-text">
+            <h3 class="footer-heading">MAYOWA OLUWANIMOTELE</h3>
+            <p>
+              A Web Developer with a Front-end concentration, Create the
+              Front-end of Websites and Web Applications, which promotes the
+              success of the final result, products.
+            </p>
+          </div>
+
           <div class="section-footer-icon">
             <div class="footer-img">
               <h3 class="footer-heading">Social</h3>
@@ -286,7 +326,8 @@
               <a href="https://instagram.com/mayowa_dan"
                 ><ion-icon class="footer-icon" name="logo-instagram"></ion-icon
               ></a>
-              <a href="https://www.linkedin.com/in/mayowa-oluwanimotele-780118255"
+              <a
+                href="https://www.linkedin.com/in/mayowa-oluwanimotele-780118255"
                 ><ion-icon class="footer-icon" name="logo-linkedin"></ion-icon
               ></a>
               <a href="mailto:oluwamayowadan@gmail.com"
@@ -294,21 +335,11 @@
               ></a>
             </div>
           </div>
-
-          <div class="section-footer-text">
-            <h3 class="footer-heading">MAYOWA OLUWANIMOTELE</h3>
-            <p>
-              A Web Developer with a Front-end concentration, Create the
-              Front-end of Websites and Web Applications, which promotes the
-              success of the final result, products.
-            </p>
-          </div>
         </div>
         <div class="line-w">
           <div class="line1"></div>
         </div>
-      </section>
+      </footer>
     </main>
-    <script src="port.js"></script>
   </body>
 </html>

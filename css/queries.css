@@ -1,5 +1,183 @@
+@media (max-width: 84em) {
+  .about,
+  .section-footer,
+  .home {
+    max-width: 150rem;
+  }
+
+  .content .main-heading {
+    font-size: 4.4rem;
+  }
+  .home-description {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 75em) {
-  .container {
-    max-width: 180rem;
+  html {
+    font-size: 59%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  /* .section-home-slide {
+    visibility: hidden;
+  } */
+
+  .nav-btn:link {
+    font-size: 1.5rem;
+  }
+  .logo-name {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 56%;
+  }
+  .about-text-box {
+    display: block;
+  }
+
+  .about-skills {
+    padding: 4rem 0;
+    margin-bottom: 1rem;
+  }
+  .primary-heading {
+    font-size: 3rem;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .project-items {
+    grid-template-columns: 1fr 1fr;
+    /* display: block; */
+  }
+  .about-text {
+    width: 90%;
+  }
+
+  /*****************/
+  /* mobile nav */
+  /********************/
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.884);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    /* transform: translateX(100%); */
+
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-btn:link,
+  .nav-btn:visited {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .grid-3cols,
+  .grid-2cols {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(235, 151, 78, 0.3),
+        rgba(230, 125, 34, 0.3)
+      ),
+      url("../img/daniel1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 32rem;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+
+  .section-home {
+    padding-top: 5rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+
+  .section-footer-content {
+    display: block;
+    /* justify-content: space-between;
+    max-width: 140rem;
+    margin: 0 auto; */
+  }
+
+  .footer-heading {
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+  }
+
+  .section-footer-text {
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-footer-icon {
+    margin-top: 0rem;
   }
 }
