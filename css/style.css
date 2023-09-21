@@ -7,7 +7,7 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   overflow-x: hidden;
 }
 
@@ -138,6 +138,26 @@ html {
   margin-right: 1.8rem;
 }
 
+/***********/
+/* sticky navgatiom*/
+/***********/
+.sticky .navbar-head {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.884);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-home {
+  margin-top: 9.6rem;
+}
+
 /****************/
 /* Mobile nav */
 /****************/
@@ -205,7 +225,7 @@ html {
 
 .home-description {
   font-size: 2.3rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   line-height: 1.5;
   color: rgb(80, 80, 80);
   margin: 0 auto;
