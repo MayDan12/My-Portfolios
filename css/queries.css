@@ -115,11 +115,14 @@
 
   .nav-btn:link,
   .nav-btn:visited {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width: 44em) {
+  html {
+    font-size: 55%;
+  }
   .grid-3cols,
   .grid-2cols {
     grid-template-columns: 1fr;
@@ -149,7 +152,7 @@
 
 @media (max-width: 37.5em) {
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
 
   .section-home {
