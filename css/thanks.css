@@ -5,20 +5,39 @@
   font-family: "Inter" sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .thanks-box {
   max-width: 100rem;
   height: 100vh;
   display: flex;
   justify-content: center;
+  background-image: url(/img/bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .box {
-  width: 20rem;
+  width: 25rem;
   align-self: center;
   text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.26);
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #fff;
 }
-.button {
+
+.box p {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding-bottom: 0.8rem;
 }
+
 .iconic {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }

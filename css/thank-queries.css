@@ -1,0 +1,10 @@
+@media (max-width: 37em) {
+  .thanks-box {
+    padding: 0rem 3.2rem 0rem 3.2rem;
+  }
+}
+@media (max-width: 29em) {
+  html {
+    font-size: 80%;
+  }
+}
