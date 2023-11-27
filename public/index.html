@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -79,15 +83,17 @@
       <!-- Section 1 -->
       <section id="Home" class="section-home">
         <div class="home">
-          <div class="home-content">
+          <div class="home-content animate__animated animate__fadeInTopLeft">
             <div class="content">
-              <h1 class="main-heading">HEY, I'M MAYOWA OLUWANIMOTELE</h1>
-              <div class="home-description">
+              <h1 class="main-heading reveal">HEY, I'M MAYOWA OLUWANIMOTELE</h1>
+              <div class="home-description reveal">
                 A Front-end Web Developer mainly focuses on creating the user
                 interface for websites and Web Applications that contribute to
                 the success of the final result, products.
               </div>
-              <a class="btnn" href="#Projects"><strong>PROJECTS</strong></a>
+              <a class="btnn reveal" href="#Projects"
+                ><strong>PROJECTS</strong></a
+              >
             </div>
 
             <div class="section-home-slide">
@@ -116,11 +122,11 @@
 
       <section id="About" class="section-about">
         <div class="about container">
-          <div class="primary-heading">
+          <div class="primary-heading reveal">
             <h3>ABOUT ME</h3>
             <div class="line"></div>
           </div>
-          <div class="text">
+          <div class="text reveal">
             <p>
               You can learn more about me, what I do, and my current
               qualifications here, which are primarily in the areas of
@@ -130,15 +136,15 @@
 
           <div class="about-text-box grid grid-2cols">
             <div class="about-text-description">
-              <h3 class="about-heading">Learn more about me!</h3>
-              <p class="about-text">
+              <h3 class="about-heading reveal">Learn more about me!</h3>
+              <p class="about-text reveal">
                 I develop the <strong>Front-end of Websites</strong> and
                 <strong>Web Applications</strong> as a Front-end Web Developer,
                 which contributes to the overall success of the finished
                 product. View a selection of my work under
                 <strong>Projects</strong>.
               </p>
-              <p class="about-text">
+              <p class="about-text reveal">
                 In order to benefit other members of the developer community, I
                 also enjoy contributing content that is linked to the knowledge
                 I have acquired over the years in web development. Please feel
@@ -149,20 +155,22 @@
                 <strong>Programming</strong>
                 stuff.
               </p>
-              <p class="about-text mag">
+              <p class="about-text reveal mag">
                 I'm interested in employment possibilities where I can grow,
                 learn, and contribute. Please get in touch with me if you have a
                 suitable opportunity that matches my qualifications and
                 expertise.
               </p>
 
-              <a class="about-btn" href="#Contact"><strong>CONTACT</strong></a>
+              <a class="about-btn reveal" href="#Contact"
+                ><strong>CONTACT</strong></a
+              >
             </div>
 
             <div class="about-skills">
               <div class="skills">
-                <h3 class="about-heading">Skills</h3>
-                <div class="skills-list">
+                <h3 class="about-heading reveal">Skills</h3>
+                <div class="skills-list reveal">
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>
@@ -184,19 +192,19 @@
       <!-- section 3 -->
       <section id="Projects" class="section-projects">
         <div class="project-container">
-          <div class="primary-heading">
+          <div class="primary-heading reveal">
             <h3>PROJECTS</h3>
             <div class="line"></div>
           </div>
 
-          <div class="text">
+          <div class="text reveal">
             <p>
               Here are some of the Projects I've worked on for myself and
               Clients, each of which includes a case study.
             </p>
           </div>
 
-          <div class="project-items grid grid-3cols">
+          <div class="project-items grid grid-3cols reveal">
             <div class="project-gallery">
               <img
                 src="img/project 1.png"
@@ -256,11 +264,11 @@
 
       <section id="Contact" class="section-cta">
         <div class="section-contact-content">
-          <div class="primary-heading">
+          <div class="primary-heading reveal">
             <h3>CONTACT</h3>
             <div class="line"></div>
           </div>
-          <div class="section-cta-container">
+          <div class="section-cta-container reveal">
             <div class="cta">
               <div class="cta-text-box">
                 <h2 class="heading-secondary">Get in touch with me!</h2>
@@ -269,7 +277,12 @@
                   me, and I will do my best to respond to you as soon as I can!
                 </p>
 
-                <form action="thanks.html" class="cta-form">
+                <form
+                  action="thanks.html"
+                  method="POST"
+                  enctype="multipart/form-data"
+                  class="cta-form"
+                >
                   <div>
                     <label for="full-name">Full Name</label>
                     <input
@@ -317,7 +330,7 @@
 
       <!-- footer Section -->
       <footer class="section-footer">
-        <div class="section-footer-content">
+        <div class="section-footer-content reveal">
           <div class="section-footer-text">
             <h3 class="footer-heading">MAYOWA OLUWANIMOTELE</h3>
             <p>

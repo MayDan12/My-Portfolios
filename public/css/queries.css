@@ -36,6 +36,13 @@
   html {
     font-size: 56%;
   }
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.5s all ease;
+  }
+
   .about-text-box {
     display: block;
   }
