@@ -393,18 +393,33 @@ html {
 }
 
 .project-description {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
+.project-description button {
+  padding: 0.5rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 1rem 11rem 0 11rem;
+}
+
+.project-description button a {
+  text-decoration: none;
+  color: #1352ff;
+  font-weight: 600;
+}
+
 .project-text {
   font-size: 1.7rem;
   font-weight: 600;
   font-family: inherit;
   line-height: 1.3;
   color: #fff;
-  text-align: center;
 }
 
 .link:link,
