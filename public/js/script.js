@@ -1,5 +1,7 @@
 "use strict";
 
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".navbar-head");
 
@@ -55,10 +57,41 @@ const obs = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: "-75px",
+    // rootMargin: "-100px",
   }
 );
 obs.observe(sectionhomeEl);
+
+
+// const sectionhomeEl = document.querySelector(".section-home");
+
+// // Function to check if an element is in the viewport
+// function isInViewport(element) {
+//     const rect = element.getBoundingClientRect();
+//     return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+// }
+
+// // Function to handle scroll event
+// function handleScroll() {
+//     if (!isInViewport(sectionhomeEl)) {
+//         document.body.classList.add("sticky");
+//     } else {
+//         document.body.classList.remove("sticky");
+//     }
+// }
+
+// // Add scroll event listener
+// window.addEventListener("scroll", handleScroll);
+
+// // Initial check on page load
+// handleScroll();
+
+
 
 function reveal() {
   const reveals = document.querySelectorAll(".reveal");

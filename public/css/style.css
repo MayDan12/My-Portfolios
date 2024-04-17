@@ -124,9 +124,9 @@ html {
 
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 1.8rem;
-  color: #222;
+  font-size: 1.5rem;
   transition: all 0.4s;
+  color: rgb(80, 80, 80);
 }
 
 .nav-btn:hover,
@@ -197,7 +197,7 @@ html {
 /*******************/
 
 .section-home {
-  padding-top: 10rem;
+  padding-top: 8rem;
   background-image: url(../img/bg.jpg);
   background-size: cover;
 }
@@ -245,7 +245,7 @@ html {
   color: rgb(80, 80, 80);
   margin: 0 auto;
   padding-bottom: 5rem;
-  max-width: 80rem;
+  max-width: 85rem;
 }
 
 .btnn:link,
@@ -400,17 +400,19 @@ html {
 }
 
 .project-description button {
-  padding: 0.5rem;
+  padding: 0.8rem;
   background-color: white;
   outline: none;
   border: none;
+  width: 13rem;
   border-radius: 0.5rem;
-  margin: 1rem 11rem 0 11rem;
+  margin-top: 1rem;
 }
 
 .project-description button a {
   text-decoration: none;
   color: #1352ff;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 
@@ -586,10 +588,11 @@ html {
 }
 
 .section-footer-text p {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   margin-top: 1rem;
   width: 100%;
   line-height: 1.5rem;
+  font-weight: 600;
 }
 
 .section-footer-icon {
@@ -620,10 +623,22 @@ html {
 .line-w {
   max-width: 120rem;
   margin: 0 auto;
-  padding-bottom: 10rem;
+  padding-bottom: 3rem;
 }
 .line1 {
   width: 100%;
   height: 0.05rem;
   background-color: white;
+}
+
+.coppy {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding-bottom: 5rem;
+}
+
+.coppy a {
+  text-decoration: none;
+  color: #fff;
 }
